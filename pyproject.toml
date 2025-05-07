@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uoes_learning_objectives"
+version = "0.1.0"
+description = "Learning Objective Tool developed for UOES"
+readme = "WORKFLOW.md"
+authors = [
+    { name = "Maka Gradin", email = "michael.gradin@uoes.rutgers.edu" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.2.3",
+    "pandas>=2.2.3",
+    "streamlit>=1.42.1",
+]
+
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "ruff>=0.0.1",
+    "mypy>=1.0.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+select = ["E", "F", "I"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true

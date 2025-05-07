@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: uoes_learning_objectives
+Version: 0.1.0
+Summary: Learning Objective Tool developed for UOES
+Author-email: Maka Gradin <michael.gradin@uoes.rutgers.edu>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=2.2.3
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: streamlit>=1.42.1
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: ruff>=0.0.1; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+
+# Workflow Documentation
+
+This document describes the workflow and usage of the UOES Learning Objectives application.
+
+> **Note:** This documentation is a placeholder. It will be updated as the application is developed with specific workflow instructions, user guides, and process documentation.
+
+## Planned Sections
+
+- Application Overview
+- User Roles and Permissions
+- Core Workflows
+  - Creating Learning Objectives
+  - Mapping Learning Objectives
+  - Reporting and Analysis
+- Data Management
+- Integration with Other Systems
+
+## Development Status
+
+The application is currently in early development. This workflow documentation will be updated as features are implemented.
