@@ -5,6 +5,7 @@ import streamlit as st
 from uoes_learning_objectives.blooms_taxonomy import show_blooms_taxonomy
 from uoes_learning_objectives.objective_analyzer import objective_analyzer
 from uoes_learning_objectives.sample_objectives import display_sample_objectives_page
+from uoes_learning_objectives.objective_creator import objective_creator
 from uoes_learning_objectives.ui_components import sidebar_navigation
 
 
@@ -26,6 +27,7 @@ def main() -> None:
     pages = {
         "Bloom's Taxonomy Guide": show_blooms_taxonomy,
         "Objective Analyzer": objective_analyzer,
+        "Objective Creator": objective_creator,
         "Sample Objectives": display_sample_objectives_page
     }
 
