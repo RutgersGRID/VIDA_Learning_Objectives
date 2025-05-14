@@ -17,7 +17,7 @@ def main() -> None:
         layout="wide"
     )
 
-    st.title("Learning Objectives Builder")
+    st.title("Learning Objectives Assistant")
     st.write("""
     Welcome to the Learning Objectives Builder! This tool helps instructors create effective learning 
     objectives for their courses using Bloom's Taxonomy.
