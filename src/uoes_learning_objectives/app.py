@@ -19,15 +19,16 @@ def main() -> None:
 
     st.title("Learning Objectives Assistant")
     st.write("""
-    Welcome to the Learning Objectives Builder! This tool helps instructors create effective learning 
-    objectives for their courses using Bloom's Taxonomy.
+    Welcome to the Learning Objectives Builder! This tool is offered to  instructors to assist them in creating effective high quality learning 
+    objectives for their material. \n
+    It is based on Bloom's Taxonomy and provides a variety of features to help you create, analyze, and refine your learning objectives. Use the sidebar to navigate through a short explanation on Bloom's or review some sample objectives.
     """)
 
-    # Define page mapping
+    # Define page mapping - reordered to make Objective Creator first
     pages = {
+        "Objective Creator": objective_creator,
         "Bloom's Taxonomy Guide": show_blooms_taxonomy,
         "Objective Analyzer": objective_analyzer,
-        "Objective Creator": objective_creator,
         "Sample Objectives": display_sample_objectives_page
     }
 
